@@ -1,12 +1,18 @@
 // ---register gsap
-import {ScrollTrigger, SplitText} from 'gsap/all'
+import gsap from 'gsap';
+import { ScrollTrigger, SplitText } from 'gsap/all';
 import React from 'react';
+import Hero from './components/Hero.jsx';
+import About from './components/About.jsx';
 
 gsap.registerPlugin(ScrollTrigger, SplitText);
 
 const App = () => {
   return (
-    <div>App</div>
+    <main className="w-screen min-h-screen overflow-x-hidden relative">
+      <Hero />
+      <About />
+    </main>
   );
 };
 
