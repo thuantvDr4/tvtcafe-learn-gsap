@@ -91,6 +91,10 @@ body {
     .animated-title {
         @apply flex flex-col gap-1 text-7xl uppercase leading-[.8] text-white sm:px-32 md:text-[6rem];
     }
+
+    .flex-center {
+        @apply flex items-center justify-center
+    }
 }
 
 .animated-word {
